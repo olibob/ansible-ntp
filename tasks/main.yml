@@ -5,8 +5,8 @@
   register: current_zone
   changed_when: false
 - name: Set Europe/Paris timezone
-  file: src=/usr/share/zoneinfo/{{zone}}/{{city}}  dest=/etc/localtime state=link force=yes
-  when: current_zone.stdout != '{{city}}'
+  file: src=/usr/share/zoneinfo/{{ntp_zone}}/{{ntp_city}}  dest=/etc/localtime state=link force=yes
+  when: current_zone.stdout != '{{ntp_city}}'
 - name: Ensure ntp is installed
   yum: name=ntp state=installed
 - name: Ensure NTP is running.

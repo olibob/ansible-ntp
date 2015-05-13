@@ -6,8 +6,8 @@ Installs ntp service for time synchronization on Centos 7
 Variables
 ---------
 
-- zone: e.g. Europe
-- city: e.g. Paris
+- ntp_zone: e.g. Europe
+- ntp_city: e.g. Paris
 
 Example:
 

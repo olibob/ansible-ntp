@@ -1,4 +1,4 @@
 ---
 # defaults file for ntp
-zone: Europe
-city: Paris
+ntp_zone: Europe
+ntp_city: Paris
